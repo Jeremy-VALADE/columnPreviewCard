@@ -17,15 +17,13 @@ body {
     font-size: 15px;
     height: 100vh;
     font-family: "LexendDeca";
-    p {
-        color : var(--color-paragraph);
-    }
-        
+    position: relative;
+
     .container {
         display: flex;   
         width: 50%;   
         margin: auto;      
-        position: relative;
+        position: absolute;
         top: 50%;
         transform: translateY(-50%);
         border-radius: 20px;
@@ -48,6 +46,7 @@ body {
                 margin-bottom: 20px;
             }     
             p {
+                color : var(--color-paragraph);
                 height: 50%;
                 margin-bottom: 15%;
             }
