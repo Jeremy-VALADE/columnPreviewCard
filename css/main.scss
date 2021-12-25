@@ -1,0 +1,121 @@
+@import url("../assets/fonts/stylesheet.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color-sedans: hsl(31, 77%, 52%);
+    --color-suvs: hsl(184, 100%, 22%);
+    --color-luxury: hsl(179, 100%, 13%);
+    --color-paragraph: hsla(0, 0%, 100%, 0.75);
+    --color-font:  hsl(0, 0%, 95%);
+    
+    color: var(--color-font);
+    font-size: 15px;
+    height: 100vh;
+    font-family: "LexendDeca";
+    p {
+        color : var(--color-paragraph);
+    }
+        
+    .container {
+        display: flex;   
+        width: 50%;   
+        margin: auto;      
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 20px;
+        overflow: hidden;
+        
+        div {        
+            padding-left: 5%;
+            padding-right: 10%;
+            padding-top: 3%;
+            padding-bottom: 5%;
+            
+            img {
+                height: 10%;
+            }
+            
+            h1 {
+                font-family: "bigShouldersDisplay";
+                font-size: 40px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }     
+            p {
+                height: 50%;
+                margin-bottom: 15%;
+            }
+            button {
+                background-color: var(--color-font);
+                padding: 15px;
+                padding-right: 30px;
+                padding-left: 30px;
+                border-radius: 35px;
+                border: 0px;                        
+                font-weight: bold; 
+                margin-bottom: 10%;
+            }       
+            button:hover {
+                transform: scale(1.2);
+            }
+        }
+        
+        .sedans {
+            background-color: var(--color-sedans);
+            
+            button {
+                color: var(--color-sedans);
+            }      
+        }
+        
+        .suvs {
+            background-color: var(--color-suvs);
+            
+            button {
+                color: var(--color-suvs);
+            }
+        }
+        
+        .luxury {
+            background-color: var(--color-luxury);
+            
+            button {
+                color: var(--color-luxury);
+            }
+        }                            
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        margin-top: 8%;
+        height: auto;
+        .container {
+            width: 80%;
+            flex-direction: column;
+            top: 0;
+            transform: translateY(0);
+            margin-bottom: 8%;
+            
+            div {
+                img {
+                    height: 15%;
+                }
+                
+                p {
+                    height: auto;
+                }
+                
+                button {
+                    margin-bottom: 5%;
+                }
+            }          
+        }
+    }
+}
