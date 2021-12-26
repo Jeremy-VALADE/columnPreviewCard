@@ -92,7 +92,7 @@ body {
     }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     body {
         .container {
             width: 80%;
@@ -101,7 +101,7 @@ body {
 }
 
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
     body {
         margin-top: 8%;
         height: auto;
